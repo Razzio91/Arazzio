@@ -18,6 +18,7 @@ var Item = /** @class */ (function () {
     Item.prototype.getPrijs = function () {
         return this.prijs;
     };
+    //hier loop ik vast
     Item.prototype.setPrijs = function (prijs) {
         this.prijs = prijs;
         if (this.prijs > 0 && this.prijs < 11) {
