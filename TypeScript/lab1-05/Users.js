@@ -28,7 +28,7 @@ var User = /** @class */ (function (_super) {
         console.log('\tNieuw User nummer: ', User.usernummer++, 'extends Persoon');
         // lab 05?
         if (_this.geslacht === "M") {
-            // super(naam, leeftijd, geslacht);
+            // ik weet niet of de lab vraagt om het vervangen van this.naam of om de begroeting bovenaan te hebben dus bij deze beide :)
             _this.naam = "\n\tGeachte heer";
             // console.log("\n\tGeachte Heer!");
         }

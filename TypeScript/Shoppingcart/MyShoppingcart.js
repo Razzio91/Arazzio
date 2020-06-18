@@ -15,6 +15,7 @@ var __extends = (this && this.__extends) || (function () {
 exports.__esModule = true;
 //Opgave 18
 var Shoppingcart_1 = require("./Shoppingcart");
+var item_1 = require("./item");
 var MyShoppingcart = /** @class */ (function (_super) {
     __extends(MyShoppingcart, _super);
     function MyShoppingcart() {
@@ -26,9 +27,15 @@ var MyShoppingcart = /** @class */ (function (_super) {
         this.itemList.forEach(function (item) {
             console.log(item.getId() + "\t" + item.getOmschrijving() + "\t" +
                 item.getPrijs() + "\t" + item.getAantal() + "\t"
-                + item.getTotaal()); //lab 06?
+                + item.getTotaal());
         });
     };
     return MyShoppingcart;
 }(Shoppingcart_1.Shoppingcart));
 exports.MyShoppingcart = MyShoppingcart;
+try {
+    item_1.Item;
+}
+catch (e) {
+    console.log(e.message);
+}

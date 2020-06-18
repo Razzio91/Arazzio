@@ -1,7 +1,7 @@
 // opgave 5 Class/object:
 export class Persoon{
     public naam: string;
-    protected leeftijd: number;
+    private leeftijd: number;
     protected geslacht: string;
     public isStudent: boolean;
     public gemiddeldCijfer: number;

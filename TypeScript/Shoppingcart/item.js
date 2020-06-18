@@ -18,37 +18,28 @@ var Item = /** @class */ (function () {
     Item.prototype.getPrijs = function () {
         return this.prijs;
     };
-    //hier loop ik vast
-    Item.prototype.setPrijs = function (prijs) {
-        this.prijs = prijs;
-        if (this.prijs > 0 && this.prijs < 11) {
-            return this.setPrijs(prijs);
-        }
-        else if (this.prijs > 0 && this.prijs < 11) {
-            throw new Error("\nPrijs klopt niet!");
-        }
-    };
     Item.prototype.getAantal = function () {
         return this.aantal;
     };
     Item.prototype.setAantal = function (aantal) {
         this.aantal = aantal;
     };
-    //lab 06?
+    //lab 06
     Item.prototype.setTotaal = function (totaal) {
         this.totaal = totaal;
     };
     Item.prototype.getTotaal = function () {
         return (this.aantal * this.prijs);
     };
+    //lab 07
+    Item.prototype.setPrijs = function (prijs) {
+        if (this.prijs >= 1 && prijs <= 10) {
+            return this.prijs;
+        }
+        else {
+            throw new Error("\n De prijs klopt niet");
+        }
+    };
     return Item;
 }());
 exports.Item = Item;
-try {
-    // exception
-    ;
-}
-catch (e) {
-    // afhandeling exception
-    console.log(e.message);
-}

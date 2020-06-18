@@ -18,7 +18,7 @@ console.log("\n\tDe leeftijd van Thamara is: ", thamara.getLeeftijd());
 console.log(thamara.getGegevens());
 console.log(umdemirelut.getGegevens());
 // lab 04:
-aras.setGemiddeldCijfer(10);
+aras.setGemiddeldCijfer(100);
 aras.setIsStudent(true);
 umut.setGemiddeldCijfer(5);
 umut.setIsStudent(true);
