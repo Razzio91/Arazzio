@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var Boek_1 = require("./Boek");
+var Laptop_1 = require("./Laptop");
+var MijnWinkelmandje_1 = require("./MijnWinkelmandje");
+var laptop1 = new Laptop_1.Laptop('001', 'Toshiba', 'Satelitte', 999.99, 10);
+var boek1 = new Boek_1.Boek('1765343536', '"A little Life"', 'Hanya Yanagihara', 39.99, 1);
+var mijnWinkelmandje = new MijnWinkelmandje_1.MijnWinkelmandje();
+mijnWinkelmandje.voegToe(laptop1);
+mijnWinkelmandje.voegToe(boek1);
+mijnWinkelmandje.toonMandje();
